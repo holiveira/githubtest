@@ -1,5 +1,4 @@
 <!DOCTYPE HTML>
-<!-- adding comment -->
 <html dir="ltr" lang="pt-BR">
 <head>
 	<title>Manual DEVOPS Smiles</title>
@@ -8,7 +7,53 @@
 	<link href="https://www.smiles.com.br/smiles-default-theme/images/favicon.ico" rel="Shortcut Icon"/>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet'
 			type='text/css'></link>
+	<link href="css/smiles-devops.css" rel="stylesheet" type="text/css">
+	<script text="text/javascript">
+		function loadContent(doc) {
+
+			var frame = document.getElementById("iFrameContent");
+			frame.src = doc;
+			var iWindow = frame.contentWindow;
+			/*
+			iWindow.addEventListener("load", function() {
+	        // get the document from the window
+	        var doc = frame.contentDocument || frame.contentWindow.document;
+					alert("Title: " + doc.title);
+					return false;
+			});
+			*/
+			return false;
+		}
+	</script>
 </head>
 <body>
+	<div class="testbox">
+		<div class="header">
+			<div class="sprite-logo-smiles1511"></div>
+			<h1 id="iframeTitle">Portal Devops</h1>
+		</div>
+		<div class="divBody">
+			<div id="menu">
+				<ul>
+					<li>
+						<a href="javascript: loadContent('home.html')">1. Missão e Visão</a></li>
+					<li>
+						<a href="javascript: loadContent('alm.html')">2. Application Lifecycle Management</a></li>
+					<li>3. Slack</li>
+					<li>4.a. SVN x GitHub - Comandos</li>
+					<li>4.b. SVN x GitHub - Arquitetura</li>
+					<li>5. GitHub Cheat Sheet</li>
+					<li>6. Fluxo GitHub</li>
+					<li>7.a. Checklist Pull Request - RM</li>
+					<li>7.b. Checklist Pull Request - DEV</li>
+					<li>8. Fluxos</li>
+					<li>9. Jenkins</li>
+				</ul>
+			</div>
+			<div id="content">
+				<iframe id="iFrameContent" src="home.html"></iframe>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
