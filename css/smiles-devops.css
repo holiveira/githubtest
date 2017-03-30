@@ -127,7 +127,7 @@ h1 {
   position: relative;
   float: left;
   text-align: left;
-  padding: 5px 0px 0px 0px;
+  padding: 3px 0px 0px 0px;
 }
 
 .line {
@@ -196,6 +196,10 @@ a {
   box-sizing: border-box;
   padding: 10px 0px;
   margin: 0px;
+}
+
+#menu a {
+  color: #848484;
 }
 
 #menu li   {
