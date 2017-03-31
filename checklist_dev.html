@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html dir="ltr" lang="pt-BR">
 <head>
-	<title>Checklist Pull Request</title>
+	<title>Checklist Dev</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<link href="https://www.smiles.com.br/smiles-default-theme/images/favicon.ico" rel="Shortcut Icon"/>
@@ -38,7 +38,9 @@
 			<ul>
 				<li>
 					<input type="checkbox" name="item01" id="item01" required onclick="Validate(this)"/>
-					<p>1. A nomenclatura do branch contém o nome do projeto?</p>
+					<span class="checkboxtext">
+						1. A nomenclatura do branch contém o nome do projeto?
+					</span>
 				</li>
 <!-- 				<li>
 					<input type="checkbox" name="item01" id="item01" placeholder="Email" required />
@@ -64,8 +66,7 @@
 					<input type="checkbox" name="item01" id="item01" placeholder="Email" required />
 					A cobertura de teste foi superior ou igual a 60%?
 				</li>
- -->
- 				<li>
+ -->				<li>
 					<input type="checkbox" name="item02" id="item02" required onclick="Validate(this)"/>
 					<p>2. O job passou com verde no jenkins?</p>
 				</li>
@@ -77,27 +78,23 @@
 -->
 				<li>
 					<input type="checkbox" name="item04" id="item04" required onclick="Validate(this)"/>
-					<p>3. Executou comando de merge back (branch atual com a master?)</p>
+					<p>3. Inseriu comentário no commit com o nr da issue?</p>
 				</li>
 				<li>
 					<input type="checkbox" name="item05" id="item05" required onclick="Validate(this)"/>
-					<p>4. Gerou o pacote corretamente?</p>
+					<p>4. Executou comando de merge back (branch atual com a master)?</p>
 				</li>
 				<li>
 					<input type="checkbox" name="item06" id="item06" required onclick="Validate(this)"/>
-					<p>5. O pacote foi tagueado corretamente?</p>
+					<p>5. Gerou o pacote corretamente?</p>
 				</li>
 				<li>
 					<input type="checkbox" name="item07" id="item07" required onclick="Validate(this)"/>
-					<p>6. Pacote ficou disponível no nexus?</p>
+					<p>6. O pacote foi tagueado corretamente?</p>
 				</li>
 				<li>
 					<input type="checkbox" name="item08" id="item08" required onclick="Validate(this)"/>
-					<p>7. Foi feito deploy em UAT?</p>
-				</li>
-				<li>
-					<input type="checkbox" name="item09" id="item09" required onclick="Validate(this)"/>
-					<p>8. Foi realizado regressivo bem sucedido em UAT?</p>
+					<p>7. Pacote ficou disponível no nexus?</p>
 				</li>
 			</ul>
 			<div id="status" class="divStatus divFail">
