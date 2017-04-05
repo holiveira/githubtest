@@ -63,11 +63,9 @@ h1 {
 .testbox {
   margin: 20px auto;
   width: 1200px;
-  /*height: 900px;*/
   -webkit-border-radius: 8px/7px;
   -moz-border-radius: 8px/7px;
   border-radius: 8px/7px;
-  background-color: #FAFAFA;
   -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, .31);
   -moz-box-shadow: 1px 2px 5px rgba(0, 0, 0, .31);
   box-shadow: 1px 2px 5px rgba(0, 0, 0, .31);
@@ -75,7 +73,6 @@ h1 {
 }
 
 .header {
-  /*width: 900px;*/
   height: 121px;
   -webkit-border-radius: 8px/7px;
   -moz-border-radius: 8px/7px;
@@ -93,7 +90,7 @@ h1 {
   width: 288px;
   float: left;
   -webkit-border-radius: 8px/7px;
-  /*-moz-border-radius: 8px/7px;*/
+  -moz-border-radius: 8px/7px;
 }
 
 .divAction {
@@ -162,7 +159,7 @@ a {
     box-sizing: border-box;
     padding: 13px 20px 0 22px;
     -webkit-border-radius: 8px/7px;
-    /*-moz-border-radius: 8px/7px;*/
+    -moz-border-radius: 8px/7px;
 }
 
 .divFail {
@@ -218,8 +215,10 @@ a {
 
 #content iframe {
   width: 912px;
-  height: inherit;
+  height: 600px;
   border: 0px;
+  padding-top: 30px;
+  overflow: hidden;
 }
 
 .imgcenter {

@@ -1,16 +1,63 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html dir="ltr" lang="pt-BR">
-<head>
-	<title>Fluxos Devops</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<link href="https://www.smiles.com.br/smiles-default-theme/images/favicon.ico" rel="Shortcut Icon"/>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet'
-			type='text/css'></link>
-	<link href="css/smiles-devops.css" rel="stylesheet" type="text/css">
-	<script src="js/smiles-devops.js"></script>
-</head>
+<title>Fluxos Devops</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="https://www.smiles.com.br/smiles-default-theme/images/favicon.ico" rel="Shortcut Icon"/>
+<link href="css/smiles-devops.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/w3.css">
+<script src="js/smiles-devops.js"></script>
 <body onload="loadParent(this.document)">
-  
+
+  <div class="w3-center">
+    <button class="w3-button demo" onclick="currentDiv(1)">Criar repositório</button>
+    <button class="w3-button demo" onclick="currentDiv(2)">Criar branch</button>
+    <button class="w3-button demo" onclick="currentDiv(3)">Commit na branch</button>
+    <button class="w3-button demo" onclick="currentDiv(4)">Pull request</button>
+    <button class="w3-button demo" onclick="currentDiv(5)">Merge back</button>
+    <button class="w3-button demo" onclick="currentDiv(6)">Deploy</button>
+  </div>
+
+  <div class="w3-content w3-display-container">
+    <img class="mySlides" src="img/01-fluxo_criar_repo.jpg" style="width:100%">
+    <img class="mySlides" src="img/02-fluxo_criar_branch.jpg" style="width:100%">
+    <img class="mySlides" src="img/03-fluxo_commit_branch.jpg" style="width:100%">
+    <img class="mySlides" src="img/04-fluxo_pull_request.jpg" style="width:100%">
+    <img class="mySlides" src="img/05-fluxo_merge_back.jpg" style="width:100%">
+    <img class="mySlides" src="img/06-fluxo_deploy.jpg" style="width:100%">
+  </div>
+
+  <img src="img/legenda.png" style="position: relative; float: right; padding-right: 35px" width="180px" />
+
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function currentDiv(n) {
+    showDivs(slideIndex = n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+       dots[i].className = dots[i].className.replace(" w3-red", "");
+    }
+    x[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " w3-red";
+  }
+  </script>
+
 </body>
 </html>
