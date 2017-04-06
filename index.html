@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html dir="ltr" lang="pt-BR">
+<head>
+	<title>Manual DEVOPS Smiles</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link href="https://www.smiles.com.br/smiles-default-theme/images/favicon.ico" rel="Shortcut Icon"/>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet'
+			type='text/css'></link>
+	<link href="css/smiles-devops.css" rel="stylesheet" type="text/css">
+	<script text="text/javascript">
+		function loadContent(html) {
+
+			var frame = document.getElementById("iFrameContent");
+			frame.src = html;
+			//var doc = frame.contentDocument || frame.contentWindow.document;
+			//alert("Title: " + doc.title);
+			return false;
+		}
+	</script>
+</head>
+<body>
+	<div class="testbox">
+		<div class="header">
+			<a href="#" onclick="javascript: loadContent('home.html')">
+				<div class="sprite-logo-smiles1511"></div>
+			</a>
+			<h1 id="iframeTitle">Portal Devops</h1>
+		</div>
+		<div class="divBody">
+			<div id="menu">
+				<ol>
+					<li>
+						<a href="#" onclick="javascript: loadContent('missao.html')">Missão e visão</a>
+					</li>
+					<li>
+						<a href="#" onclick="javascript: loadContent('papeis.html')">Papéis</a>
+					</li>
+					<li>
+						<a href="#" onclick="javascript: loadContent('pipeline.html')">Pipeline</a>
+					</li>
+					<li>
+						<a href="#" onclick="javascript: loadContent('ferramentas.html')">Ferramentas e objetivos</a>
+					</li>
+					<li>
+						<a href="#" onclick="javascript: loadContent('slack.html')">Slack</a>
+					</li>
+					<li>
+						<a href="#" onclick="javascript: loadContent('svngit_arquitetura.html')">SVN x GitHub - Arquitetura</a>
+					</li>
+					<li>
+						<a href="#" onclick="javascript: loadContent('svngit_comandos.html')">SVN x GitHub - Comandos</a>
+					</li>
+					<li>
+						<a href="#" onclick="loadContent('git_cheat_sheet.html')">Git Cheat Sheet</a>
+					</li>
+					<li>
+						<a href="#" onclick="javascript: loadContent('git_fluxo.html')">Fluxo GitHub</a>
+					</li>
+					<li>
+						<a href="#" onclick="javascript: loadContent('checklist_pullrequest.html')">Checklist Pull Request</a>
+					</li>
+					<li>
+						<a href="#" onclick="javascript: loadContent('checklist_dev.html')">Checklist Dev</a>
+					</li>
+					<li>
+						<a href="#" onclick="javascript: loadContent('fluxos.html')">Fluxos</a>
+					</li>
+					<li>
+						<a href="#" onclick="javascript: loadContent('jenkins.html')">Jenkins</a>
+					</li>
+				</ol>
+			</div>
+			<div id="content">
+				<iframe id="iFrameContent" src="home.html"></iframe>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

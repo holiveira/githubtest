@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html dir="ltr" lang="pt-BR">
+<head>
+	<title>Checklist Dev</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link href="https://www.smiles.com.br/smiles-default-theme/images/favicon.ico" rel="Shortcut Icon"/>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet'
+			type='text/css'></link>
+	<link href="css/smiles-devops.css" rel="stylesheet" type="text/css">
+	<script src="js/smiles-devops.js"></script>
+</head>
+<body onload="loadParent(this.document)">
+	<div id="content">
+		<form name="mainForm" action="/">
+			<ol id="checklist">
+				<li>
+					<input type="checkbox" required onclick="validate(this)"/>
+					<p>A nomenclatura do branch contém o nome do projeto?</p>
+				</li>
+<!--
+				<li>
+					<input type="checkbox" required onclick="validate(this)"/>
+					<p>Criou teste unitário para a nova atualização?</p>
+				</li>
+				<li>
+					<input type="checkbox" required onclick="validate(this)"/>
+					<p>
+						Passou nos testes unitários?
+					</p>
+				</li>
+				<li>
+					<input type="checkbox" required onclick="validate(this)"/>
+					<p>
+						Criou teste integrado para a nova atualização?
+					</p>
+				</li>
+				<li>
+					<input type="checkbox" required onclick="validate(this)"/>
+					<p>
+						Passou nos testes integrados?
+					</p>
+				</li>
+				<li>
+					<input type="checkbox" required onclick="validate(this)"/>
+					<p>
+						Passou no teste regressivo?
+					</p>
+				</li>
+				<li>
+					<input type="checkbox" required onclick="validate(this)"/>
+					<p>
+						A cobertura de teste foi superior ou igual a 60%?
+					</p>
+				</li>
+				<li>
+					<input type="checkbox" required onclick="validate(this)"/>
+					<p>Passou na meta do sonar?</p>
+				</li>
+ -->
+ 				<li>
+					<input type="checkbox" required onclick="validate(this)"/>
+					<p>O job passou com verde no jenkins?</p>
+				</li>
+				<li>
+					<input type="checkbox" required onclick="validate(this)"/>
+					<p>Inseriu comentário no commit com o nr da issue?</p>
+				</li>
+				<li>
+					<input type="checkbox" required onclick="validate(this)"/>
+					<p>Executou comando de merge back (branch atual com a master)?</p>
+				</li>
+				<li>
+					<input type="checkbox" required onclick="validate(this)"/>
+					<p>Gerou o pacote corretamente?</p>
+				</li>
+				<li>
+					<input type="checkbox" required onclick="validate(this)"/>
+					<p>O pacote foi tagueado corretamente?</p>
+				</li>
+				<li>
+					<input type="checkbox" required onclick="validate(this)"/>
+					<p>Pacote ficou disponível no nexus?</p>
+				</li>
+			</ol>
+			<div id="status" class="divStatus divFail">
+				<p id="textStatus" class="pStatus">Checklist Incompleto</p>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

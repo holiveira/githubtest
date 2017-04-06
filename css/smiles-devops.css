@@ -1,0 +1,254 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th,
+td {
+  padding: 0;
+  margin: 0;
+}
+
+fieldset,
+img {
+  border: 0
+}
+
+:focus {
+  outline: none
+}
+
+body,
+input,
+textarea,
+select {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #4c4c4c;
+}
+
+html {
+  background-color: #ffffff;
+}
+
+hr {
+  color: #a9a9a9;
+  opacity: 0.3;
+  margin: 0px;
+  padding: 0px;
+}
+
+p {
+  display: inline-block;
+  margin-left: 18px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  padding-top: 35px;
+}
+
+.checkboxtext {
+  /* Checkbox text */
+  display: inline;
+    font-size: 16px;
+    display: inline-block;
+    margin-left: 18px;
+}
+
+.testbox {
+  margin: 20px auto;
+  width: 1200px;
+  -webkit-border-radius: 8px/7px;
+  -moz-border-radius: 8px/7px;
+  border-radius: 8px/7px;
+  -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, .31);
+  -moz-box-shadow: 1px 2px 5px rgba(0, 0, 0, .31);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, .31);
+  border: solid 1px #cbc9c9;
+}
+
+.header {
+  height: 121px;
+  -webkit-border-radius: 8px/7px;
+  -moz-border-radius: 8px/7px;
+  background-color: #ff9934;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+.sprite-logo-smiles1511 {
+  background-image: url(../img/xsprite-home.png.pagespeed.ic.Mg9DRj-T0q.webp);
+  background-repeat: no-repeat;
+  background-position: 0 -266px;
+  height: 121px;
+  width: 288px;
+  float: left;
+  -webkit-border-radius: 8px/7px;
+  -moz-border-radius: 8px/7px;
+}
+
+.divAction {
+  width: 435px;
+  height: 70px;
+  text-align: right;
+  background-color: #F2F2F2;
+  border: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+}
+
+.left {
+  float: left;
+  margin-left: 10px;
+}
+
+.right {
+  float: right;
+  margin-right: 10px;
+}
+
+.title {
+  position: relative;
+  background-color: #848484;
+  color: #fff;
+  padding: 0px 10px 0px 0px;
+}
+
+.command {
+  position: relative;
+  float: left;
+  text-align: left;
+  padding: 3px 0px 0px 0px;
+}
+
+.line {
+  height: 100px;
+}
+
+.guide {
+  width: 901px;
+  height: 50px;
+  background-color: #000;
+  color: #fff;
+  text-align: right;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.guideLink {
+  padding: 12px 20px 0px 0px;
+}
+
+.divStatus {
+  margin-right: 50px;
+  width: 248px;
+  height: 55px;
+  float: right;
+  text-align: center;
+  background-color: #FFFF00;
+  border: 2px solid #ff9934;
+  box-sizing: border-box;
+  padding: 13px 20px 0 22px;
+  -webkit-border-radius: 8px/7px;
+  -moz-border-radius: 8px/7px;
+}
+
+.divFail {
+  color: #000;
+  background-color: #FFFF00;
+  border: 2px solid #ff9934;
+}
+
+.divPass {
+  color: #FFF;
+  background-color: #5fba7d;
+  border: 2px solid #088A08;
+}
+
+.pStatus {
+  font-size: 16px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.divBody {
+    height: 630px;
+}
+
+#menu {
+  width: 288px;
+  height: inherit;
+  float: left;
+  background-color: #F6E3CE;
+  box-sizing: border-box;
+  padding: 10px 0px;
+  margin: 0px;
+}
+
+#menu a {
+  color: #848484;
+}
+
+#menu ol  {
+  list-style: decimal;
+  list-style-position: inside;
+}
+
+#menu li  {
+  font-size: 15px;
+  color: #848484;
+  padding: 10px 10px;
+  font-weight: bold;
+}
+
+#content {
+  width: 912px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: inherit;
+  float: right;
+}
+
+#content iframe {
+  width: inherit;
+  height: 600px;
+  border: 0px;
+  padding-top: 30px;
+  overflow: hidden;
+}
+
+#jenkins {
+  list-style: decimal;
+  list-style-position: inside;
+  padding: 0 40px;
+}
+
+#jenkins li {
+  height: 100px;
+  color: #848484;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.imgcenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#checklist {
+  list-style: none;
+  padding: 0 40px;
+}
+
+#checklist li {
+  height: 50px;
+  color: #848484;
+  font-weight: bold;
+  font-size: 20px;
+}

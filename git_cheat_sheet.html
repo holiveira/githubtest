@@ -1,188 +1,16 @@
 <!DOCTYPE HTML>
 <html dir="ltr" lang="pt-BR">
-
 <head>
-	<title>Smiles :: Git Cheat Sheet</title>
+	<title>Git Cheat Sheet</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
 	<link href="https://www.smiles.com.br/smiles-default-theme/images/favicon.ico" rel="Shortcut Icon" />
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'></link>
-	<style type="text/css">
-		body,
-		div,
-		dl,
-		dt,
-		dd,
-		ul,
-		ol,
-		li,
-		h1,
-		h2,
-		h3,
-		h4,
-		h5,
-		h6,
-		pre,
-		form,
-		fieldset,
-		input,
-		textarea,
-		p,
-		blockquote,
-		th,
-		td {
-			padding: 0;
-			margin: 0;
-		}
-
-		fieldset,
-		img {
-			border: 0
-		}
-
-		ol,
-		ul,
-		li {
-			list-style: none
-		}
-
-		:focus {
-			outline: none
-		}
-
-		body,
-		input,
-		textarea,
-		select {
-			font-family: 'Open Sans', sans-serif;
-			font-size: 14px;
-			color: #4c4c4c;
-		}
-
-		html {
-			background-color: #ffffff;
-		}
-
-		hr {
-			color: #a9a9a9;
-			opacity: 0.3;
-			margin: 0px;
-			padding: 0px;
-		}
-
-		p {
-			display: inline-block;
-			margin-left: 18px;
-		}
-
-		h1 {
-			font-size: 32px;
-			font-weight: 300;
-			color: #fff;
-			text-align: center;
-			padding-top: 35px;
-		}
-
-		.testbox {
-			margin: 20px auto;
-			width: 900px;
-			height: 900px;
-			-webkit-border-radius: 8px/7px;
-			-moz-border-radius: 8px/7px;
-			border-radius: 8px/7px;
-			background-color: #FAFAFA;
-			-webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, .31);
-			-moz-box-shadow: 1px 2px 5px rgba(0, 0, 0, .31);
-			box-shadow: 1px 2px 5px rgba(0, 0, 0, .31);
-			border: solid 1px #cbc9c9;
-		}
-
-		.header {
-			width: 900px;
-			height: 121px;
-			-webkit-border-radius: 8px/7px;
-			-moz-border-radius: 8px/7px;
-			background-color: #ff9934;
-			box-sizing: border-box;
-			padding: 0px;
-			margin: 0px;
-		}
-
-		.sprite-logo-smiles1511 {
-			background-image: url(http://smiles.com.br/smiles-default-theme/images/xsprite-home.png.pagespeed.ic.Mg9DRj-T0q.webp);
-			background-repeat: no-repeat;
-			background-position: 0 -266px;
-			height: 121px;
-			width: 288px;
-			float: left;
-			-webkit-border-radius: 8px/7px;
-			/*-moz-border-radius: 8px/7px;*/
-		}
-
-		.divAction {
-			width: 435px;
-			height: 70px;
-			text-align: right;
-			background-color: #F2F2F2;
-			border: 0px;
-			box-sizing: border-box;
-			padding: 0px;
-		}
-
-		.left {
-			float: left;
-			margin-left: 10px;
-		}
-
-		.right {
-			float: right;
-			margin-right: 10px;
-		}
-
-		.title {
-			position: relative;
-			background-color: #848484;
-			color: #fff;
-			padding: 0px 10px 0px 0px;
-		}
-
-		.command {
-			position: relative;
-			float: left;
-			text-align: left;
-			padding: 5px 0px 0px 0px;
-		}
-
-		.line {
-			height: 100px;
-		}
-
-		.guide {
-			width: 901px;
-			height: 50px;
-			background-color: #000;
-			color: #fff;
-			text-align: right;
-		}
-
-		a {
-			color: #fff;
-			text-decoration: none;
-		}
-
-		.guideLink {
-			padding: 12px 20px 0px 0px;
-		}
-	</style>
+	<link href="css/smiles-devops.css" rel="stylesheet" type="text/css">
+	<script src="js/smiles-devops.js"></script>
 </head>
-
-<body>
-	<div class="testbox">
-		<div class="header">
-			<div class="sprite-logo-smiles1511"></div>
-			<h1>Git Cheat Sheet</h1>
-		</div>
-		<br/>
+<body onload="loadParent(this.document)">
+	<div>
 		<!-- Linha 1 -->
 		<div class="line">
 			<div class="divAction left">
@@ -264,7 +92,7 @@
 				<div class="title">Branch</div>
 				<p class="command">
 					Alterar para um branch específico<br/>
-					<b>$ git checkout -b &ltbranch&gt</b>
+					<b>$ git checkout &ltbranch&gt</b>
 				</p>
 			</div>
 		</div>
@@ -304,15 +132,13 @@
 		</div>
 		<!-- GitHub guides -->
 		<div class="guide">
-			<a href="https://guides.github.com/">
+			<a href="https://guides.github.com/" target="_blank">
 				<div class="guideLink">
 					<span style="vertical-align: middle;">GitHub Guide</span>
-					<img	src="http://www.iconsdb.com/icons/preview/white/github-10-xxl.png" width="25" height="25"
-							style="vertical-align: middle;" />
+					<img src="img/github-10-xxl.png" width="25" height="25" style="vertical-align: middle;" />
 				</div>
 			</a>
 		</div>
 	</div>
 </body>
-
 </html>
